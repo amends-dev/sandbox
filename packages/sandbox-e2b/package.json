@@ -1,0 +1,48 @@
+{
+  "name": "@amends-dev/sandbox-e2b",
+  "version": "0.2.0",
+  "description": "Sandboxes on E2B for the @amends-dev/sandbox contract.",
+  "keywords": [
+    "agent",
+    "e2b",
+    "effect",
+    "sandbox"
+  ],
+  "homepage": "https://github.com/amends-dev/sandbox/tree/main/packages/sandbox-e2b#readme",
+  "bugs": {
+    "url": "https://github.com/amends-dev/sandbox/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amends-dev/sandbox.git",
+    "directory": "packages/sandbox-e2b"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts",
+    "./internal/*": null
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@amends-dev/sandbox": "workspace:^",
+    "e2b": "catalog:"
+  },
+  "devDependencies": {
+    "@effect/platform-bun": "catalog:",
+    "@effect/vitest": "catalog:",
+    "effect": "catalog:"
+  },
+  "peerDependencies": {
+    "effect": "catalog:"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@amends-dev/sandbox",
+  "version": "0.2.1",
+  "description": "Sandboxes that agents work in: the contract every sandbox provider implements, with Effect's own file system and processes inside, and the conformance suites each provider runs.",
+  "keywords": [
+    "agent",
+    "daytona",
+    "effect",
+    "sandbox"
+  ],
+  "homepage": "https://github.com/amends-dev/sandbox/tree/main/packages/sandbox#readme",
+  "bugs": {
+    "url": "https://github.com/amends-dev/sandbox/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amends-dev/sandbox.git",
+    "directory": "packages/sandbox"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./conformance": "./src/conformance/index.ts",
+    "./conformance/internal/*": null,
+    "./*": "./src/*.ts"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@effect/vitest": "catalog:",
+    "effect": "catalog:"
+  },
+  "peerDependencies": {
+    "@effect/vitest": "catalog:",
+    "effect": "catalog:"
+  },
+  "peerDependenciesMeta": {
+    "@effect/vitest": {
+      "optional": true
+    }
+  }
+}

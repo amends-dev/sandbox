@@ -1,0 +1,48 @@
+{
+  "name": "@amends-dev/sandbox-daytona",
+  "version": "0.2.0",
+  "description": "Sandboxes on Daytona for the @amends-dev/sandbox contract: a Linux machine of its own for each sandbox, made from a snapshot of its template's version.",
+  "keywords": [
+    "agent",
+    "daytona",
+    "effect",
+    "sandbox"
+  ],
+  "homepage": "https://github.com/amends-dev/sandbox/tree/main/packages/sandbox-daytona#readme",
+  "bugs": {
+    "url": "https://github.com/amends-dev/sandbox/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amends-dev/sandbox.git",
+    "directory": "packages/sandbox-daytona"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts",
+    "./internal/*": null
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@amends-dev/sandbox": "workspace:^",
+    "@daytona/sdk": "catalog:"
+  },
+  "devDependencies": {
+    "@effect/platform-bun": "catalog:",
+    "@effect/vitest": "catalog:",
+    "effect": "catalog:"
+  },
+  "peerDependencies": {
+    "effect": "catalog:"
+  }
+}
