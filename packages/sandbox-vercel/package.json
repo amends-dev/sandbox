@@ -1,6 +1,6 @@
 {
   "name": "@amends-dev/sandbox-vercel",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sandboxes on Vercel for the @amends-dev/sandbox contract.",
   "keywords": [
     "agent",

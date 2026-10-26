@@ -1,6 +1,6 @@
 {
   "name": "@amends-dev/sandbox-local",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sandboxes as directories on this machine, for the @amends-dev/sandbox contract: for development, tests, and agents you would trust on this machine anyway.",
   "keywords": [
     "agent",

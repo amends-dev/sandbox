@@ -1,6 +1,6 @@
 {
   "name": "@amends-dev/sandbox-daytona",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sandboxes on Daytona for the @amends-dev/sandbox contract: a Linux machine of its own for each sandbox, made from a snapshot of its template's version.",
   "keywords": [
     "agent",
