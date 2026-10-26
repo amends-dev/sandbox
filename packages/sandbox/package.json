@@ -1,6 +1,6 @@
 {
   "name": "@amends-dev/sandbox",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Sandboxes that agents work in: the contract every sandbox provider implements, with Effect's own file system and processes inside, and the conformance suites each provider runs.",
   "keywords": [
     "agent",

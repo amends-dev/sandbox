@@ -1,5 +1,11 @@
 # @amends-dev/sandbox
 
+## 0.2.2
+
+### Patch Changes
+
+- [#1](https://github.com/amends-dev/sandbox/pull/1) [`44299ff`](https://github.com/amends-dev/sandbox/commit/44299ff36188397f0f6707325e13b9ddb502ba74) Thanks [@saribmah](https://github.com/saribmah)! - Moved to its own repository, [amends-dev/sandbox](https://github.com/amends-dev/sandbox), which its links on npm and its provenance now name.
+
 ## 0.2.1
 
 ### Patch Changes

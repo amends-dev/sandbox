@@ -1,6 +1,6 @@
 {
   "name": "@amends-dev/sandbox-e2b",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sandboxes on E2B for the @amends-dev/sandbox contract.",
   "keywords": [
     "agent",
